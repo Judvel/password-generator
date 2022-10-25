@@ -1,0 +1,80 @@
+:root {
+  --border-color: #ced4da;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.main-title-container {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  font-size: 2.3rem;
+}
+.main-password--generated {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+.main-length-container {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  margin-bottom: 20px;
+
+  font-size: 1.4rem;
+}
+#length-password {
+  padding: 5px;
+}
+.main-options-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.button-password {
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#button-generate-password {
+  background: #175ddc;
+  color: white;
+  border: none;
+}
+
+#button-generate-password:hover{
+    background-color: #1146a7;
+}
+
+#button-copy-password {
+  background-color: #fbfbfb;
+  color: #6c7589;
+  border: 1px solid var(--border-color);
+}
+#button-copy-password:hover{
+    background-color: var(--border-color);
+}
