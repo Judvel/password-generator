@@ -23,7 +23,7 @@
       </section>
       <section class="main-length-container">
         <label for="length-password">Length</label>
-        <input type="number" id="length-password" />
+        <input type="number" id="length-password" min="0"/>
       </section>
       <section class="main-options-container">
         <p>Options</p>
@@ -32,16 +32,16 @@
           <label for="capitalize-letter">A-Z</label>
         </div>
         <div>
-          <input type="checkbox" id="capitalize-letter" />
-          <label for="capitalize-letter">a-z</label>
+          <input type="checkbox" id="lower-letter" />
+          <label for="lower-letter">a-z</label>
         </div>
         <div>
-          <input type="checkbox" id="capitalize-letter" />
-          <label for="capitalize-letter">0-9</label>
+          <input type="checkbox" id="number-checkbox" />
+          <label for="number-checkbox">0-9</label>
         </div>
         <div>
-          <input type="checkbox" id="capitalize-letter" />
-          <label for="capitalize-letter">!@#$%^&*</label>
+          <input type="checkbox" id="symbols-checkbox" />
+          <label for="symbols-checkbox">!@#$%^&*</label>
         </div>
       </section>
       <section>
@@ -53,5 +53,6 @@
         </button>
       </section>
     </main>
+    <script src="../src/index.js"></script>
   </body>
 </html>
