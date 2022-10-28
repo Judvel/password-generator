@@ -21,28 +21,65 @@
       <section class="main-password--generated">
         <p id="password-generated"></p>
       </section>
-      <section class="main-length-container">
-        <label for="length-password">Length</label>
-        <input type="number" id="length-password" min="0"/>
+      <p>Password Type</p>
+      <section class="main-type-container">
+        <div>
+          <input type="radio" id="password" />
+          <label for="password">Password</label>
+        </div>
+        <div>
+          <input type="radio" id="passphrase" />
+          <label for="passphrase">Passphrase</label>
+        </div>
       </section>
-      <section class="main-options-container">
-        <p>Options</p>
-        <div>
-          <input type="checkbox" id="capitalize-letter" />
-          <label for="capitalize-letter">A-Z</label>
-        </div>
-        <div>
-          <input type="checkbox" id="lower-letter" />
-          <label for="lower-letter">a-z</label>
-        </div>
-        <div>
-          <input type="checkbox" id="number-checkbox" />
-          <label for="number-checkbox">0-9</label>
-        </div>
-        <div>
-          <input type="checkbox" id="symbols-checkbox" />
-          <label for="symbols-checkbox">!@#$%^&*</label>
-        </div>
+
+      <section class="main-passphrase-container inactive">
+        <section class="input-passphrase-inputs">
+          <div class="main-input-container">
+            <label for="number-words">Number of Words</label>
+            <input type="number" id="number-words" min="0" />
+          </div>
+          <div class="main-input-container">
+            <label for="word-separator">Word Separator</label>
+            <input type="text" id="word-separator" maxlength="1" />
+          </div>
+        </section>
+        <section class="main-options-container">
+          <div>
+            <input type="checkbox" id="capitalize" />
+            <label for="capitalize">Capitalize</label>
+          </div>
+          <div>
+            <input type="checkbox" id="include-number" />
+            <label for="include-number">Include Number</label>
+          </div>
+        </section>
+      </section>
+
+      <section class="main-password-container">
+        <section class="main-input-container">
+          <label for="length-password">Length</label>
+          <input type="number" id="length-password" min="0" />
+        </section>
+        <section class="main-options-container">
+          <p>Options</p>
+          <div>
+            <input type="checkbox" class="checkbox" id="capitalize-letter" />
+            <label for="capitalize-letter">A-Z</label>
+          </div>
+          <div>
+            <input type="checkbox" class="checkbox" id="lower-letter" />
+            <label for="lower-letter">a-z</label>
+          </div>
+          <div>
+            <input type="checkbox" class="checkbox" id="number-checkbox" />
+            <label for="number-checkbox">0-9</label>
+          </div>
+          <div>
+            <input type="checkbox" class="checkbox" id="symbols-checkbox" />
+            <label for="symbols-checkbox">!@#$%^&*</label>
+          </div>
+        </section>
       </section>
       <section>
         <button class="button-password" id="button-generate-password">
@@ -53,6 +90,6 @@
         </button>
       </section>
     </main>
-    <script src="../src/index.js"></script>
+    <script defer src="../src/index.js"></script>
   </body>
 </html>

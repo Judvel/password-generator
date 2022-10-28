@@ -19,6 +19,7 @@ main {
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
+  font-size: 1.4rem;
 }
 
 .main-title-container {
@@ -34,28 +35,41 @@ main {
   margin-bottom: 20px;
   font-size: 1.6rem;
 }
-.main-length-container {
+
+.main-type-container{
+  display: flex;
+  margin: 10px 0;
+}
+
+.main-type-container div{
+  margin-right: 10px;
+}
+.main-input-container {
   display: flex;
   flex-direction: column;
   width: 230px;
   margin-bottom: 20px;
-
-  font-size: 1.4rem;
+  margin-right: 10px;
+  
 }
-#length-password {
+#length-password, #number-words, #word-separator {
   padding: 5px;
 }
 .main-options-container {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  font-size: 1.4rem;
+  
+}
+
+.input-passphrase-inputs{
+  display: flex;
 }
 
 .button-password {
   padding: 5px 10px;
   border-radius: 2px;
-  font-size: 1.4rem;
+  
   cursor: pointer;
   font-weight: bold;
 }
@@ -77,4 +91,8 @@ main {
 }
 #button-copy-password:hover{
     background-color: var(--border-color);
+}
+
+.inactive{
+  display: none;
 }
